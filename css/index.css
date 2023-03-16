@@ -200,7 +200,7 @@ nav .socials{
 }
 
 .contact h2 {
-    padding-top: 5vh;
+    padding-top: 5.5vh;
 }
 
 .contact h3 {
@@ -256,11 +256,23 @@ footer input{
 footer .copyright {
     text-align: end;
 }
+footer button{
+    color:black;
+}
 
 /* mobile media query */
 @media (max-width: 428px) {
     /* header section */
-    
+    header {
+        height: auto;
+    }
+    header h1{
+        width: 100%;
+        font-size: 5.5rem;
+    }
+    nav .link_bar{
+        flex-direction: column;
+    }
 
     /* gallery section */
     .gallery {
@@ -270,7 +282,7 @@ footer .copyright {
     /* about us section */
 
     .about {
-        height: 200vh;
+        height: auto;
     }
     
     .about h2 {
@@ -279,7 +291,10 @@ footer .copyright {
     }
     
     .about-container .text {
+        margin-top: 20%;
         width: 85%;
+        height: 35vh;
+        font-size: 6rem;
     }
     
     /* contact us section */
@@ -310,6 +325,41 @@ footer .copyright {
         height: auto;
         padding-top: 2.5vh;
         font-size: 2rem;
+        display: flex;
+        flex-direction: column;
+        
         
     }
+    footer .top{
+        flex-direction: column;
+        justify-content: center;
+        
+
+    }
+    footer nav{
+        flex-direction: column;
+       justify-content: center;
+       width: auto;
+    }
+    footer .email_box{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        
+
+        
+    }
+    footer input, button,p{
+        width: 90%
+    }
+    footer .copyright{
+        display: flex;
+        justify-content: center;
+        
+    }
+    footer p {
+        text-align: center;
+    }
+    
 }
