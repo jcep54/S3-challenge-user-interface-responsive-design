@@ -220,17 +220,97 @@ footer .copyright {
         margin: 0 auto;
         text-align: center;
         font-size: 4rem;
+    } header {
+        height: auto;
+    }
+    header h1{
+        width: 100%;
+        font-size: 5.5rem;
+    }
+    nav .link_bar{
+        flex-direction: column;
     }
 
     /* menu */
     .menu {
         background-image: none;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
-
+    .menu-container,h2 {
+        flex-direction: column;
+        background-color: white;  
+        align-items: center;
+    }
+    .menu h2{
+        border-bottom: 15px solid black;
+        width: 90%;
+        padding: 0%;
+        
+    }
+    .menu-section .label{
+        border: 4px solid black;
+        margin-top: 20%;
+        
+    }
+    .menu-section .menu-item p, .top{
+        padding-right:  0%;
+        margin: 0%;
+        width: 100%;
+    }
+    .menu .top{
+        flex-direction: column;
+        
+    }
+    .menu-section{
+        padding: 0%;
+        margin: 0%;
+        width: auto;
+    }
+    .menu h4, .menu p, h2{
+        color: black;
+        text-align: center;
+    }
+    .menu-item {
+        border-bottom: 3px solid black;
+        padding-right: 0%;
+        
+    }
+    
+    
     /* footer section */
     footer {
         height: auto;
         padding-top: 2.5vh;
         font-size: 2rem;
+        display: flex;
+        flex-direction: column;   
+    }
+    footer .top{
+        flex-direction: column;
+        justify-content: center;
+    }
+    footer nav{
+        flex-direction: column;
+       justify-content: center;
+       width: auto;
+    }
+    footer .email_box{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;   
+    }
+    footer input, button,p{
+        width: 90%
+    }
+    footer .copyright{
+        display: flex;
+        justify-content: center;   
+    }
+    footer p {
+        text-align: center;
     }
 }
